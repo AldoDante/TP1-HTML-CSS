@@ -1,11 +1,201 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Turismo</title>
 </head>
+
 <body>
-    <h1>hola Mundo</h1>
+   <header>
+        <div class="logo">
+            <a href="index.html" aria-label="Volver a la página de inicio">
+                <img src="-------" alt="Logo de Turismo Jujuy">
+            </a>
+        </div> 
+
+        <nav aria-label="Navegación principal">
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                
+                <li class="li-mega-menu">
+                    <a href="#" class="menu-item" aria-haspopup="true" aria-expanded="false">Explorar</a>
+                    <div class="mega-menu" role="menu" aria-label="Submenú de exploración">
+                        <div class="mega-menu-content">
+                            <div class="mega-column">
+                                <h3>Destinos</h3>
+                                <ul role="none">  <!-- role="none" quita significado semantico y pasa a leer los items-->>
+                                    <li><a href="-" role="menuitem">Quebrada de Humahuaca</a></li>
+                                    <li><a href="--" role="menuitem">Salinas Grandes</a></li>
+                                    <li><a href="--" role="menuitem">Yungas</a></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="mega-column">
+                                <h3>Agencias</h3>
+                                <ul role="none">  
+                                    <li><a href="---" role="menuitem">Agencias Locales</a></li>
+                                    <li><a href="--" role="menuitem">Tours Privados</a></li>
+                                    <li><a href="--" role="menuitem">Guías Certificados</a></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="mega-column">
+                                <h3>Precios</h3>
+                                <ul role="none">
+                                    <li><a href="---" role="menuitem">Paquetes Económicos</a></li>
+                                    <li><a href="---" role="menuitem">Promociones 2x1</a></li>
+                                    <li><a href="---" role="menuitem">Tarifas Grupales</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li><a href="--">Blog</a></li>
+                <li><a href="---">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" aria-label="Introducción visual">
+            <video src="---" autoplay muted loop id="hero-video" poster="---" aria-hidden="true"></video>
+            <div class="hero-overlay">
+                <h1 clsss="animate-text">Explorá el Norte Argentino</h1>
+                <p class="animate-text-delay">Viví experiencias inolvidables en paisajes únicos.</p>
+                <a href="----" aria-label="Ver todos los destinos turísticos">Ver Destinos</a>
+            </div>
+        </section>
+
+        <section class="destinos-container" aria-labelledby="destinos-title">
+            <h2 id="destinos-title" class="section-title">Destinos Destacados</h2>
+            <div class="destinos">
+                <article class="card" aria-labelledby="card-1">
+                    <div class="card-img">
+                        <img src="----" alt="Paisaje de la Quebrada de Humahuaca">
+                        <div class="card-overlay">
+                            <span class="category" aria-label="Categoría: Cultural">Cultural</span>  <!--span para encapsular la palabra y asi es poder darle estilos mas facilmente-->>   
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Quebrada de Humahuaca</h3>
+                        <p>Un viaje a través de la historia y los colores del norte.</p>
+                        <a href="----" class="btn-card" aria-label="Explorar más sobre la Quebrada de Humahuaca">Explorar</a>
+                    </div>
+                </article>
+
+                <article class="card" aria-labelledby="card-2">
+                    <div class="card-img">
+                        <img src="---" alt="Salinas Grandes en Jujuy">
+                        <div class="card-overlay">
+                            <span class="category" aria-label="Categoría: Naturaleza">Naturaleza</span>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Salinas Grandes</h3>
+                        <p>Un desierto blanco que parece de otro planeta.</p>
+                        <a href="-----" class="btn-card" aria-label="Explorar más sobre las Salinas Grandes">Explorar</a>
+                    </div>
+                </article>
+
+                <article class="card" aria-labelledby="card-3">
+                    <div class="card-img">
+                        <img src="-----" alt="Cerro de los Siete Colores">
+                        <div class="card-overlay">
+                            <span class="category" aria-label="Categoría: Paisajes">Paisajes</span>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Purmamarca</h3>
+                        <p>El encanto del Cerro de los Siete Colores te espera.</p>
+                        <a href="-----" class="btn-card" aria-label="Explorar más sobre Purmamarca">Explorar</a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="stats-container" aria-label="Estadísticas de visitas">
+                <div class="counter-item">
+                    <span class="counter-number" aria-live="polite">500+</span>
+                    <p>visitantes este mes</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonios">
+            <h2 class="section-title">Lo que dicen nuestros viajeros</h2>
+
+            <div class="carousel-container">
+                <input type="radio" name="testimonial-slide" id="slide-1" checked>  <!--checked define que el carrusel comience con el primer testimonio-->>
+                <input type="radio" name="testimonial-slide" id="slide-2">
+                <input type="radio" name="testimonial-slide" id="slide-3">
+
+                <div class="slides">
+                    <article class="testimonial-slide-1">
+                        <div class="testimonial-content">
+                            <p>"La mejor experiencia de mi vida. Los paisajes de Jujuy son increíbles y la organización fue perfecta."</p>
+                            <p>— Juan Pérez, Buenos Aires</p>
+                        </div>
+                    </article>
+
+                    <article class="testimonial-slide-2">
+                        <div class="testimonial-content">
+                            <p>"Increíble atención en las agencias locales. El mega-menú del sitio me ayudó a encontrar todo rápido."</p>
+                            <p>— María García, Córdoba</p>
+                        </div>
+                    </article>
+
+                    <article class="testimonial-slide-3">
+                        <div class="testimonial-content">
+                            <p>"Pude comparar precios fácilmente. El modo oscuro del sitio es genial para navegar de noche."</p>
+                            <p>— Facundo, San Salvador de Jujuy</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="carousel-dots">
+                    <label for="slide-1" class="dot" aria-label="Ver testimonio 1"></label>
+                    <label for="slide-2" class="dot" aria-label="Ver testimonio 2"></label>
+                    <label for="slide-3" class="dot" aria-label="Ver testimonio 3"></label>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
+
+<footer class="footer">
+    <div class="newsletter">
+        <h3>Suscríbete a nuestro Newsletter</h3>
+        <p>Recibe las mejores ofertas de viaje en tu email.</p>
+        <form class="newsletter_form" aria-label="Suscripción al boletín de noticias">
+            <input type="email" placeholder="Tu correo electrónico" required aria-label="Ingresa tu correo electrónico">
+            <button type="submit" class="btn">Suscribirse</button>
+        </form>
+    </div>
+
+    <div class="social">
+        <h3>Síguenos</h3>
+        <div class="social-icons">
+            <a href="#" aria-label="Ir a nuestro Facebook"><i></i></a>
+            <a href="#" aria-label="Ir a nuestro Instagram"><i></i></a>
+            <a href="#" aria-label="Ir a nuestro Twitter"><i></i></a>
+        </div>
+    </div>
+
+    <div class="map">
+        <h3>Ubicación</h3>
+        <div class="map-container">
+            <iframe 
+                title="Mapa interactivo con la ubicación de nuestras oficinas"
+                src="https://www.google.com/maps/embed?pb=..." 
+                width="100%" 
+                height="150" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+    </div>
+</footer>
+
 </html>
