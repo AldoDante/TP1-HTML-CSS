@@ -1,0 +1,87 @@
+/* Contenedor principal del carrusel */
+.carousel-container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden; /* Oculta los testimonios que no están activos */
+    padding: 40px 20px;
+    background-color: #efebe9; /* Tono tierra claro */
+    border-radius: 15px;
+}
+
+/* Ocultamos los radio buttons originales */
+input[name="testimonial-slide"] {
+    display: none;
+}
+
+.section-title {
+    text-align: center;      
+    width: 100%;             
+    margin-bottom: 30px;     
+    color: #5d4037;          
+    font-size: 2rem;         
+}
+
+
+.testimonios .section-title {
+    margin-top: 50px;       
+    text-transform: uppercase; 
+}
+
+/* Contenedor de las diapositivas */
+.slides {
+    display: flex;
+    width: 300%; /* 100% por cada testimonio (3 en total) */
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1); /* Transición suave */
+}
+
+/* Estilo de cada testimonio */
+.testimonial-content {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    color: #5d4037; /* Marrón principal */
+}
+
+.testimonial-content p:first-child {
+    font-style: italic;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* --- Lógica del Movimiento (Selección por CSS) --- */
+#slide-1:checked ~ .slides { transform: translateX(0%); }
+#slide-2:checked ~ .slides { transform: translateX(-33.33%); }
+#slide-3:checked ~ .slides { transform: translateX(-66.66%); }
+
+/* --- Estilo de los "Dots" (Puntos) --- */
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background-color: #bcaaa4; /* Ocre claro */
+    border-radius: 50%; /* Los hace circulares */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Cambio de color cuando el dot está "activo" */
+#slide-1:checked ~ .carousel-dots label[for="slide-1"],
+#slide-2:checked ~ .carousel-dots label[for="slide-2"],
+#slide-3:checked ~ .carousel-dots label[for="slide-3"] {
+    background-color: #5d4037; /* Marrón oscuro para el activo */
+    transform: scale(1.2);
+}
+
+/* --- SOLUCIÓN PARA EL FORMULARIO (Evita el choque con la zona café) --- */
+/* Si tu formulario o la sección siguiente tiene clase 'footer' o 'contacto' */
+.formulario-contacto, footer {
+    margin-top: 60px; /* Esto crea el espacio en blanco que falta en tu captura */
+    padding: 60px 0;
+}
