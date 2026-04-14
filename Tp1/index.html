@@ -6,6 +6,10 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="Styles/destinos.css">
+    <link rel="stylesheet" href="Styles/hero.css">
+    <link rel="stylesheet" href="Styles/testimonios.css">
+    
     <title>Turismo</title>
 </head>
 
@@ -67,104 +71,93 @@
     </header>
 
     <main>
-        <section class="hero" aria-label="Introducción visual">
-            <video src="---" autoplay muted loop id="hero-video" poster="---" aria-hidden="true"></video>
+        <!--Seccion hero-->
+        <section class="hero">
+            <video src="video/video1.mp4" autoplay muted loop id="hero-video"></video>
             <div class="hero-overlay">
-                <h1 clsss="animate-text">Explorá el Norte Argentino</h1>
+                <h1 clss="animate-text">Explorá el Norte Argentino</h1>
                 <p class="animate-text-delay">Viví experiencias inolvidables en paisajes únicos.</p>
-                <a href="----" aria-label="Ver todos los destinos turísticos">Ver Destinos</a>
+                <a href="----">Ver Destinos</a>
             </div>
         </section>
 
-        <section class="destinos-container" aria-labelledby="destinos-title">
-            <h2 id="destinos-title" class="section-title">Destinos Destacados</h2>
-            <div class="destinos">
-                <article class="card" aria-labelledby="card-1">
-                    <div class="card-img">
-                        <img src="----" alt="Paisaje de la Quebrada de Humahuaca">
-                        <div class="card-overlay">
-                            <span class="category" aria-label="Categoría: Cultural">Cultural</span>  <!--span para encapsular la palabra y asi es poder darle estilos mas facilmente-->>   
-                        </div>
+        <!--Seccion destinos-->
+        <section class="destinos-container">
+            <h2 class="section-title">Destinos Destacados</h2>
+            <div class="destinos-grid">
+                <article class="card">
+                    <div class="card-img-container">
+                        <img src="../img/img1.jpg" alt="Paisaje de la Quebrada de Humahuaca">
+                        <span class="category">Cultural</span>  <!--span encapsula una palabra asi sea mas facil de manipular con css-->>
                     </div>
                     <div class="card-info">
                         <h3>Quebrada de Humahuaca</h3>
                         <p>Un viaje a través de la historia y los colores del norte.</p>
-                        <a href="----" class="btn-card" aria-label="Explorar más sobre la Quebrada de Humahuaca">Explorar</a>
+                        <a href="#" class="btn-card">Explorar</a>
                     </div>
                 </article>
 
-                <article class="card" aria-labelledby="card-2">
-                    <div class="card-img">
-                        <img src="---" alt="Salinas Grandes en Jujuy">
-                        <div class="card-overlay">
-                            <span class="category" aria-label="Categoría: Naturaleza">Naturaleza</span>
-                        </div>
+                <article class="card">
+                    <div class="card-img-container">
+                        <img src="../img/img2.jpg" alt="Salinas Grandes en Jujuy">
+                        <span class="category">Naturaleza</span> 
                     </div>
                     <div class="card-info">
                         <h3>Salinas Grandes</h3>
                         <p>Un desierto blanco que parece de otro planeta.</p>
-                        <a href="-----" class="btn-card" aria-label="Explorar más sobre las Salinas Grandes">Explorar</a>
+                        <a href="#" class="btn-card">Explorar</a>
                     </div>
                 </article>
 
-                <article class="card" aria-labelledby="card-3">
-                    <div class="card-img">
-                        <img src="-----" alt="Cerro de los Siete Colores">
-                        <div class="card-overlay">
-                            <span class="category" aria-label="Categoría: Paisajes">Paisajes</span>
-                        </div>
+                <article class="card">
+                    <div class="card-img-container">
+                        <img src="../img/img3.jpg" alt="Cerro de los Siete Colores">
+                        <span class="category">Paisajes</span>
                     </div>
                     <div class="card-info">
                         <h3>Purmamarca</h3>
                         <p>El encanto del Cerro de los Siete Colores te espera.</p>
-                        <a href="-----" class="btn-card" aria-label="Explorar más sobre Purmamarca">Explorar</a>
+                        <a href="#" class="btn-card">Explorar</a>
                     </div>
                 </article>
             </div>
 
-            <div class="stats-container" aria-label="Estadísticas de visitas">
-                <div class="counter-item">
-                    <span class="counter-number" aria-live="polite">500+</span>
-                    <p>visitantes este mes</p>
-                </div>
+            <div class="stats-container">
+                <span class="counter-number">500+</span>
+                <p>visitantes este mes</p>
             </div>
         </section>
 
+        <!--Seccion testimonios-->
         <section class="testimonios">
             <h2 class="section-title">Lo que dicen nuestros viajeros</h2>
 
             <div class="carousel-container">
-                <input type="radio" name="testimonial-slide" id="slide-1" checked>  <!--checked define que el carrusel comience con el primer testimonio-->>
+                <input type="radio" name="testimonial-slide" id="slide-1" checked>  <!--checked define que el carrusel comience con el primer testimonio-->
                 <input type="radio" name="testimonial-slide" id="slide-2">
                 <input type="radio" name="testimonial-slide" id="slide-3">
 
                 <div class="slides">
-                    <article class="testimonial-slide-1">
-                        <div class="testimonial-content">
-                            <p>"La mejor experiencia de mi vida. Los paisajes de Jujuy son increíbles y la organización fue perfecta."</p>
-                            <p>— Juan Pérez, Buenos Aires</p>
-                        </div>
-                    </article>
+                    <div class="testimonial-content">
+                        <p>"La mejor experiencia de mi vida. Los paisajes de Jujuy son increíbles y la organización fue perfecta."</p>
+                        <p>— Juan Pérez, Buenos Aires</p>
+                    </div>
+                    
+                    <div class="testimonial-content">
+                        <p>"Increíble atención en las agencias locales. El mega-menú del sitio me ayudó a encontrar todo rápido."</p>
+                        <p>— María García, Córdoba</p>
+                    </div>
 
-                    <article class="testimonial-slide-2">
-                        <div class="testimonial-content">
-                            <p>"Increíble atención en las agencias locales. El mega-menú del sitio me ayudó a encontrar todo rápido."</p>
-                            <p>— María García, Córdoba</p>
-                        </div>
-                    </article>
-
-                    <article class="testimonial-slide-3">
-                        <div class="testimonial-content">
-                            <p>"Pude comparar precios fácilmente. El modo oscuro del sitio es genial para navegar de noche."</p>
-                            <p>— Facundo, San Salvador de Jujuy</p>
-                        </div>
-                    </article>
+                    <div class="testimonial-content">
+                        <p>"Pude comparar precios fácilmente. El modo oscuro del sitio es genial para navegar de noche."</p>
+                        <p>— Facundo, San Salvador de Jujuy</p>
+                    </div>
                 </div>
 
                 <div class="carousel-dots">
-                    <label for="slide-1" class="dot" aria-label="Ver testimonio 1"></label>
-                    <label for="slide-2" class="dot" aria-label="Ver testimonio 2"></label>
-                    <label for="slide-3" class="dot" aria-label="Ver testimonio 3"></label>
+                    <label for="slide-1" class="dot"></label>
+                    <label for="slide-2" class="dot"></label>
+                    <label for="slide-3" class="dot"></label>
                 </div>
             </div>
         </section>

@@ -1,0 +1,119 @@
+:root {
+    --overlay-color: rgba(0, 0, 0, 0.5);
+    --accent-color: #e67e22; 
+    --text-white: #ffffff;
+    --transition-speed: 0.8s;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden; 
+}
+
+.hero {
+    position: relative;
+    height: 100vh; 
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--text-white);
+}
+
+/* Video de fondo */
+#hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -2;
+    transform: translate(-50%, -50%);
+    object-fit: cover; /* Asegura que el video cubra el área */
+}
+
+/* Capa oscura para que el texto sea legible */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--overlay-color);
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Animaciones de Texto (Requisito de Texto Animado) */
+.animate-text {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    opacity: 0;
+    animation: fadeInDown var(--transition-speed) forwards;
+}
+
+.animate-text-delay {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    opacity: 0;
+    animation: fadeInUp var(--transition-speed) 0.5s forwards;
+}
+
+/* Botón con micro-interacción (Requisito de Micro-interacciones) */
+.hero-overlay a {
+    padding: 12px 30px;
+    background-color: var(--accent-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    opacity: 0;
+    animation: fadeIn var(--transition-speed) 1s forwards;
+}
+
+.hero-overlay a:hover {
+    transform: scale(1.1);
+    background-color: #d35400;
+}
+
+/* Keyframes para las animaciones */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
