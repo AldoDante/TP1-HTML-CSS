@@ -1,117 +1,95 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+/* RESET */
+* { 
+  box-sizing: border-box; 
+  margin: 0; 
+  padding: 0; 
 }
 
-/* Header y Footer sin css*/
 body {
-  margin: 0;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: sans-serif;
+  background-color: #f4f1ea;
 }
 
 main {
-  flex-grow: 1; /* Empuja el footer al fondo */
+  flex-grow: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 40px 20px;
-  background-color: #e0f7fa; 
+  padding: 20px;
 }
+
+/* CONTENEDOR DE DOS LADOS */
+.contenedor-contacto {
+  display: flex;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  overflow: hidden;
+  max-width: 900px;
+}
+
+.imagen-decorativa img {
+  width: 350px;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* form */
+#contacto { padding: 30px; }
 
 .formulario {
-  background: white;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
-  width: 100%;
-  max-width: 600px;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
 }
 
-@media (min-width: 600px) {
-  .formulario { 
-    grid-template-columns: 1fr 1fr; 
-  }
-  .ancho-completo { 
-    grid-column: 1 / 3; 
-  }
-}
+.grupo { display: flex; flex-direction: column; }
+.ancho-completo { grid-column: 1 / 3; }
 
-/*campos y boton*/
-.grupo {
-  display: flex;
-  flex-direction: column;
-}
-
-label {
-  font-weight: 600;
-  font-size: 0.9rem;
-  color: #005f73;
-}
+label { font-weight: bold; color: #3d2b1f; margin-bottom: 5px; }
 
 .campo { 
-  padding: 12px; 
-  margin-top: 8px; 
-  border: 2px solid #ddd;
-  border-radius: 6px;
-  font-size: 1rem;
-  transition: all 0.3s ease; 
-  outline: none; 
+  padding: 10px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
 }
-
-.campo:focus { border-color: #0a9396; }
-.campo:valid { border-color: #2a9d8f; }
-.campo:invalid { border-color: #e76f51; }
 
 .btn-enviar {
-  background-color: #005f73;
+  background-color: #3d2b1f;
   color: white;
-  padding: 15px;
+  padding: 12px;
   border: none;
-  border-radius: 6px;
-  font-weight: bold;
   cursor: pointer;
-  transition: transform 0.2s, background-color 0.2s;
+  font-weight: bold;
 }
 
-.btn-enviar:hover {
-  background-color: #0a9396;
-  transform: translateY(-3px); 
-}
-
-/* Modal y micro animaciones */
+/* modal y spinner */
 .modal {
-  display: none; 
-  position: fixed; 
+  display: none;
+  position: fixed;
   inset: 0;
   background: rgba(0,0,0,0.7);
-  justify-content: center; 
+  justify-content: center;
   align-items: center;
-  z-index: 1000;
 }
 
 #modal-exito:target { display: flex; }
 
 .spinner {
   width: 50px; height: 50px;
-  border: 5px solid rgba(255,255,255,0.2); 
-  border-top: 5px solid #94d2bd; 
+  border: 5px solid white;
+  border-top-color: #4CAF50;
   border-radius: 50%;
   animation: girar 1s linear infinite, ocultar 0s 2s forwards;
 }
 
 .mensaje {
   position: absolute;
-  background: white; 
-  padding: 30px; 
-  border-radius: 10px; 
-  text-align: center;
+  background: white; padding: 20px; text-align: center;
   opacity: 0;
   animation: mostrar 0.5s 2s forwards;
 }
@@ -119,3 +97,15 @@ label {
 @keyframes girar { to { transform: rotate(360deg); } }
 @keyframes ocultar { to { opacity: 0; visibility: hidden; } }
 @keyframes mostrar { to { opacity: 1; } }
+
+/* Oculatar imagen para celulares*/
+@media (max-width: 836px) {
+  .imagen-decorativa { display: none; }
+  .formulario {
+    grid-template-columns: 1fr; /* AQUÍ se suspenden las dos columnas */
+  }
+
+  .ancho-completo {
+    grid-column: 1 / 2; /* Ajustamos para que coincida con la nueva única columna */
+  }
+}
