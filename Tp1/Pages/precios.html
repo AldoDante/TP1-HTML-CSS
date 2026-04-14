@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precios y Paquetes - Magical Tours</title>
+    <link rel="stylesheet" href="../Styles/header.css">
+    <link rel="stylesheet" href="../Styles/footer.css">
+    <link rel="stylesheet" href="../Styles/precios.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-container">
+            <h1 class="logo">
+                <span class="logo-magical">Magical</span>
+                <span class="logo-tours">Tours</span>
+            </h1>
+            <nav class="nav">
+                <ul class="menu">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./destinos.html">Destinos</a></li>
+                    <li><a href="./agencias.html">Agencias</a></li>
+                    <li><a href="./precios.html" class="active">Precios</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="contenedor-precios">
+        <section class="intro-precios">
+            <h2 class="section-title">Comparador de Paquetes 2026</h2>
+            <p class="subtitle">Elegí la experiencia que mejor se adapte a vos</p>
+        </section>
+
+        <section class="tabla-comparativa">
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Servicios</th>
+                            <th>Plan Económico</th>
+                            <th>Plan Aventura</th>
+                            <th>Plan Premium (VIP)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="servicio">Traslados In/Out</td>
+                            <td><i class="fas fa-check check"></i></td>
+                            <td><i class="fas fa-check check"></i></td>
+                            <td><i class="fas fa-check check"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="servicio">
+                                Guía Certificado
+                                <span class="tooltip-icon" data-tooltip="Guías bilingües registrados en Turismo Jujuy"></span>
+                            </td>
+                            <td><i class="fas fa-check check"></i></td>
+                            <td><i class="fas fa-check check"></i></td>
+                            <td><i class="fas fa-check check"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="servicio">
+                                Equipamiento para Trekking
+                                <span class="tooltip-icon" data-tooltip="Incluye bastones, cascos y capas de lluvia"></span>
+                            </td>
+                            <td><i class="fas fa-times cross"></i></td>
+                            <td><i class="fas fa-check check"></i></td>
+                            <td><i class="fas fa-check check"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="servicio">
+                                Acceso Ilimitado
+                                <span class="tooltip-icon" data-tooltip="Entrada libre a todos los museos y parques nacionales"></span>
+                            </td>
+                            <td><i class="fas fa-times cross"></i></td>
+                            <td><i class="fas fa-times cross"></i></td>
+                            <td><i class="fas fa-check check"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="servicio">Almuerzo Regional</td>
+                            <td><i class="fas fa-times cross"></i></td>
+                            <td><i class="fas fa-check check"></i></td>
+                            <td><i class="fas fa-check check"></i></td>
+                        </tr>
+                        <tr class="row-prices">
+                            <td class="servicio">Precio Final</td>
+                            <td class="price">$25.000</td>
+                            <td class="price">$55.000</td>
+                            <td class="price">$90.000</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><a href="#" class="btn-table">Elegir</a></td>
+                            <td><a href="#" class="btn-table">Elegir</a></td>
+                            <td><a href="#" class="btn-table best-seller">Elegir VIP</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+    <div class="footer-contenido">
+
+        <!-- IZQUIERDA -->
+        <div class="footer-izq">
+            <a href="https://www.facebook.com" target="_blank">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.tiktok.com" target="_blank">
+                <i class="fab fa-tiktok"></i>
+            </a>
+        </div>
+
+        <!-- CENTRO -->
+        <div class="footer-centro">
+            <form>
+                <input type="text" placeholder="Tu nombre">
+                <input type="email" placeholder="Tu email">
+                <textarea placeholder="Tu mensaje"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+
+        <!-- DERECHA -->
+        <div class="footer-der">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18..."
+                width="300" 
+                height="200" 
+                style="border:0;"
+                loading="lazy">
+            </iframe>
+        </div>
+
+    </div>
+</footer>
+
+</body>
+</html>
