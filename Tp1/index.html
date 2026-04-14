@@ -1,11 +1,214 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <title>Turismo</title>
 </head>
+
 <body>
-    <h1>hola Mundo</h1>
+    <header class="header">
+        <div class="header-container">
+
+            <!-- LOGO -->
+            <h1 class="logo">
+            <span class="logo-magical">Magical</span>
+            <span class="logo-tours">Tours</span>
+            </h1>
+
+            <!-- MENÚ -->
+            <nav class="nav">
+            <ul class="menu">
+
+                <li><a href="#">Inicio</a></li>
+
+                <!-- DESTINOS -->
+                <li class="dropdown">
+                <a href="#">Destinos</a>
+
+                <ul class="submenu">
+                    <li><a href="#">Quebrada de Humahuaca</a></li>
+                    <li><a href="#">Salinas Grandes</a></li>
+                    <li><a href="#">Yungas</a></li>
+                </ul>
+                </li>
+
+                <!-- AGENCIAS -->
+                <li class="dropdown">
+                <a href="#">Agencias</a>
+
+                <ul class="submenu">
+                    <li><a href="#">Agencias Locales</a></li>
+                    <li><a href="#">Tours Privado</a></li>
+                    <li><a href="#">Gias Certificados</a></li>
+                </ul>
+                </li>
+                
+                <!-- PRECIOS -->
+                <li class="dropdown">
+                <a href="#">Precio</a>
+
+                <ul class="submenu">
+                    <li><a href="#">Paquete Economico</a></li>
+                    <li><a href="#">Promociones 2 x 1</a></li>
+                    <li><a href="#">Tarifas Grupales</a></li>
+                </ul>
+                </li>
+
+                <li><a href="#">Contacto</a></li>
+     		    <li><a href="#">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <main>
+        <section class="hero" aria-label="Introducción visual">
+            <video src="---" autoplay muted loop id="hero-video" poster="---" aria-hidden="true"></video>
+            <div class="hero-overlay">
+                <h1 clsss="animate-text">Explorá el Norte Argentino</h1>
+                <p class="animate-text-delay">Viví experiencias inolvidables en paisajes únicos.</p>
+                <a href="----" aria-label="Ver todos los destinos turísticos">Ver Destinos</a>
+            </div>
+        </section>
+
+        <section class="destinos-container" aria-labelledby="destinos-title">
+            <h2 id="destinos-title" class="section-title">Destinos Destacados</h2>
+            <div class="destinos">
+                <article class="card" aria-labelledby="card-1">
+                    <div class="card-img">
+                        <img src="----" alt="Paisaje de la Quebrada de Humahuaca">
+                        <div class="card-overlay">
+                            <span class="category" aria-label="Categoría: Cultural">Cultural</span>  <!--span para encapsular la palabra y asi es poder darle estilos mas facilmente-->>   
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Quebrada de Humahuaca</h3>
+                        <p>Un viaje a través de la historia y los colores del norte.</p>
+                        <a href="----" class="btn-card" aria-label="Explorar más sobre la Quebrada de Humahuaca">Explorar</a>
+                    </div>
+                </article>
+
+                <article class="card" aria-labelledby="card-2">
+                    <div class="card-img">
+                        <img src="---" alt="Salinas Grandes en Jujuy">
+                        <div class="card-overlay">
+                            <span class="category" aria-label="Categoría: Naturaleza">Naturaleza</span>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Salinas Grandes</h3>
+                        <p>Un desierto blanco que parece de otro planeta.</p>
+                        <a href="-----" class="btn-card" aria-label="Explorar más sobre las Salinas Grandes">Explorar</a>
+                    </div>
+                </article>
+
+                <article class="card" aria-labelledby="card-3">
+                    <div class="card-img">
+                        <img src="-----" alt="Cerro de los Siete Colores">
+                        <div class="card-overlay">
+                            <span class="category" aria-label="Categoría: Paisajes">Paisajes</span>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Purmamarca</h3>
+                        <p>El encanto del Cerro de los Siete Colores te espera.</p>
+                        <a href="-----" class="btn-card" aria-label="Explorar más sobre Purmamarca">Explorar</a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="stats-container" aria-label="Estadísticas de visitas">
+                <div class="counter-item">
+                    <span class="counter-number" aria-live="polite">500+</span>
+                    <p>visitantes este mes</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonios">
+            <h2 class="section-title">Lo que dicen nuestros viajeros</h2>
+
+            <div class="carousel-container">
+                <input type="radio" name="testimonial-slide" id="slide-1" checked>  <!--checked define que el carrusel comience con el primer testimonio-->>
+                <input type="radio" name="testimonial-slide" id="slide-2">
+                <input type="radio" name="testimonial-slide" id="slide-3">
+
+                <div class="slides">
+                    <article class="testimonial-slide-1">
+                        <div class="testimonial-content">
+                            <p>"La mejor experiencia de mi vida. Los paisajes de Jujuy son increíbles y la organización fue perfecta."</p>
+                            <p>— Juan Pérez, Buenos Aires</p>
+                        </div>
+                    </article>
+
+                    <article class="testimonial-slide-2">
+                        <div class="testimonial-content">
+                            <p>"Increíble atención en las agencias locales. El mega-menú del sitio me ayudó a encontrar todo rápido."</p>
+                            <p>— María García, Córdoba</p>
+                        </div>
+                    </article>
+
+                    <article class="testimonial-slide-3">
+                        <div class="testimonial-content">
+                            <p>"Pude comparar precios fácilmente. El modo oscuro del sitio es genial para navegar de noche."</p>
+                            <p>— Facundo, San Salvador de Jujuy</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="carousel-dots">
+                    <label for="slide-1" class="dot" aria-label="Ver testimonio 1"></label>
+                    <label for="slide-2" class="dot" aria-label="Ver testimonio 2"></label>
+                    <label for="slide-3" class="dot" aria-label="Ver testimonio 3"></label>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
-</html>git che
+
+<footer class="footer">
+    <div class="footer-contenido">
+
+        <!-- IZQUIERDA -->
+        <div class="footer-izq">
+            <a href="https://www.facebook.com" target="_blank">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.tiktok.com" target="_blank">
+                <i class="fab fa-tiktok"></i>
+            </a>
+        </div>
+
+        <!-- CENTRO -->
+        <div class="footer-centro">
+            <form>
+                <input type="text" placeholder="Tu nombre">
+                <input type="email" placeholder="Tu email">
+                <textarea placeholder="Tu mensaje"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+
+        <!-- DERECHA -->
+        <div class="footer-der">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18..."
+                width="300" 
+                height="200" 
+                style="border:0;"
+                loading="lazy">
+            </iframe>
+        </div>
+
+    </div>
+</footer>
+
+</html>
