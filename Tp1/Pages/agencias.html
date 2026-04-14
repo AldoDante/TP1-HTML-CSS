@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agencias - Magical Tours</title>
+    <link rel="stylesheet" href="../Styles/header.css">
+    <link rel="stylesheet" href="../Styles/footer.css">
+    <link rel="stylesheet" href="../Styles/agencias.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-container">
+            <h1 class="logo">
+                <span class="logo-magical">Magical</span>
+                <span class="logo-tours">Tours</span>
+            </h1>
+            <nav class="nav">
+                <ul class="menu">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li class="dropdown">
+                        <a href="./destinos.html">Destinos</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="./agencias.html">Agencias</a>
+                    </li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="contenedor-agencias">
+        <h2 class="section-title">Agencias Autorizadas</h2>
+        <p class="subtitle">Conocé a quienes harán tu viaje inolvidable</p>
+
+        <div class="agencias-grid">
+            
+            <article class="agency-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="../Images/agencia1.jpg" alt="Agencia Quebrada">
+                        <div class="front-info">
+                            <h3>Quebrada Viajes</h3>
+                            <p>Especialistas en Humahuaca</p>
+                        </div>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Detalles de Contacto</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Tilcara, Jujuy</p>
+                        <p><i class="fas fa-phone"></i> +54 388 123456</p>
+                        
+                        <div class="rating-container">
+                            <p>Calificación:</p>
+                            <div class="stars">
+                                <input type="radio" id="a1-star5" name="rating1" value="5"><label for="a1-star5">★</label>
+                                <input type="radio" id="a1-star4" name="rating1" value="4"><label for="a1-star4">★</label>
+                                <input type="radio" id="a1-star3" name="rating1" value="3" checked><label for="a1-star3">★</label>
+                                <input type="radio" id="a1-star2" name="rating1" value="2"><label for="a1-star2">★</label>
+                                <input type="radio" id="a1-star1" name="rating1" value="1"><label for="a1-star1">★</label>
+                            </div>
+                        </div>
+                        <a href="#" class="btn-card">Ver Perfil</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="agency-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="../Images/agencia2.jpg" alt="Puna Tours">
+                        <div class="front-info">
+                            <h3>Puna Tours</h3>
+                            <p>Expertos en Salinas Grandes</p>
+                        </div>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Detalles de Contacto</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> San Salvador de Jujuy</p>
+                        <p><i class="fas fa-phone"></i> +54 388 654321</p>
+                        <div class="rating-container">
+                            <p>Calificación:</p>
+                            <div class="stars">
+                                <input type="radio" id="a2-star5" name="rating2" value="5" checked><label for="a2-star5">★</label>
+                                <input type="radio" id="a2-star4" name="rating2" value="4"><label for="a2-star4">★</label>
+                                <input type="radio" id="a2-star3" name="rating2" value="3"><label for="a2-star3">★</label>
+                                <input type="radio" id="a2-star2" name="rating2" value="2"><label for="a2-star2">★</label>
+                                <input type="radio" id="a2-star1" name="rating2" value="1"><label for="a2-star1">★</label>
+                            </div>
+                        </div>
+                        <a href="#" class="btn-card">Ver Perfil</a>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Magical Tours - Facultad de Ingeniería UNJU</p>
+    </footer>
+
+</body>
+</html>
