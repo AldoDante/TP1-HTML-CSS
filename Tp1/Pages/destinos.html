@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href=../css/destinos.css>
+</head>
+<body>
+    
+    <header class="header-destinos">
+        <h1>MIRA NUESTOS MARAVILLOROS DESTINOS EN JUJUY</h1>
+    </header>
+    
+    <section class="contenedor-destinos">
+        <input type="radio" name="filtro" id="todos" checked>
+        <input type="radio" name="filtro" id="regiones">
+        <input type="radio" name="filtro" id="ciudades">
+        
+        <div class="botones-filtro">
+            <label for="todos">Todos</label>
+            <label for="regiones">Regiones</label>
+            <label for="ciudades">Ciudades</label>
+        </div>
+
+        <div class="galeria-grid">
+            <article class="card cat-regiones">
+                <img src="../../Img/yungas.jpg" alt="Yungas">
+                <div class="overlay"><h3>Yungas Selva Jejeña</h3> </div>
+            </article>
+            <article class="card cat-regiones">
+                <img src="../../Img/puna.jpg" alt="Puna">
+                <div class="overlay"><h3>Puna Jujeña</h3> </div>
+            </article>
+            <article class="card cat-ciudades">
+                <img src="../../Img/tilcara.jpg" alt="Tilcara">
+                <div class="overlay"><h3>Tilcara</h3> </div>
+            </article>
+            <article class="card cat-ciudades">
+                <img src="../../Img/sanSalvador.jpg" alt="San Salvador">
+                <div class="overlay"><h3>San Salvador</h3> </div>
+            </article>
+
+        </div>
+
+    <div class="contenedor-tabla">
+    <h2>Tarifas y Excursiones 2026</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Destino</th>
+                <th>Categoría</th>
+                <th>Duración</th>
+                <th>Precio (ARS)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-label="Destino">Yungas (Selva)</td>
+                <td data-label="Categoría">Naturaleza</td>
+                <td data-label="Duración">Full Day</td>
+                <td data-label="Precio">$45.000</td>
+            </tr>
+            <tr>
+                <td data-label="Destino">Salinas Grandes</td>
+                <td data-label="Categoría">Puna</td>
+                <td data-label="Duración">12 Horas</td>
+                <td data-label="Precio">$60.000</td>
+            </tr>
+            <tr>
+                <td data-label="Destino">Tilcara Histórico</td>
+                <td data-label="Categoría">Cultural</td>
+                <td data-label="Duración">4 Horas</td>
+                <td data-label="Precio">$25.000</td>
+            </tr>
+            <tr>
+                <td data-label="Destino">San Salvador de Jujuy</td>
+                <td data-label="Categoría">Ciudad</td>
+                <td data-label="Duración">6 Horas</td>
+                <td data-label="Precio">$30.000</td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+    </section>
+    
+</body>
+</html>
