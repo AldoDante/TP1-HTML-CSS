@@ -55,9 +55,19 @@ label { font-weight: bold; color: #3d2b1f; margin-bottom: 5px; }
 .campo { 
   padding: 10px; 
   border: 1px solid #ccc; 
-  border-radius: 4px; 
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s ease;
 }
 
+.campo:valid {
+  border-color: #4CAF50; 
+}
+
+.campo:invalid:focus {
+  border-color: #e76f51; 
+  box-shadow: 0 0 5px rgba(231, 111, 81, 0.3);
+}
 .btn-enviar {
   background-color: #3d2b1f;
   color: white;
