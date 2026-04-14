@@ -1,15 +1,14 @@
-/* Contenedor principal del carrusel */
 .carousel-container {
     position: relative;
     max-width: 800px;
     margin: 0 auto;
     overflow: hidden; /* Oculta los testimonios que no están activos */
     padding: 40px 20px;
-    background-color: #efebe9; /* Tono tierra claro */
+    background-color: #efebe9; 
     border-radius: 15px;
 }
 
-/* Ocultamos los radio buttons originales */
+/*radio buttons originales */
 input[name="testimonial-slide"] {
     display: none;
 }
@@ -31,8 +30,8 @@ input[name="testimonial-slide"] {
 /* Contenedor de las diapositivas */
 .slides {
     display: flex;
-    width: 300%; /* 100% por cada testimonio (3 en total) */
-    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1); /* Transición suave */
+    width: 300%; 
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1); /* Transición*/
 }
 
 /* Estilo de cada testimonio */
@@ -40,7 +39,7 @@ input[name="testimonial-slide"] {
     width: 100%;
     padding: 20px;
     text-align: center;
-    color: #5d4037; /* Marrón principal */
+    color: #5d4037; 
 }
 
 .testimonial-content p:first-child {
@@ -49,12 +48,12 @@ input[name="testimonial-slide"] {
     margin-bottom: 10px;
 }
 
-/* --- Lógica del Movimiento (Selección por CSS) --- */
+/* --- Lógica del Movimiento --- */
 #slide-1:checked ~ .slides { transform: translateX(0%); }
 #slide-2:checked ~ .slides { transform: translateX(-33.33%); }
 #slide-3:checked ~ .slides { transform: translateX(-66.66%); }
 
-/* --- Estilo de los "Dots" (Puntos) --- */
+/* --- DOTS --- */
 .carousel-dots {
     display: flex;
     justify-content: center;
@@ -65,8 +64,8 @@ input[name="testimonial-slide"] {
 .dot {
     width: 12px;
     height: 12px;
-    background-color: #bcaaa4; /* Ocre claro */
-    border-radius: 50%; /* Los hace circulares */
+    background-color: #bcaaa4; 
+    border-radius: 50%; 
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
@@ -75,7 +74,7 @@ input[name="testimonial-slide"] {
 #slide-1:checked ~ .carousel-dots label[for="slide-1"],
 #slide-2:checked ~ .carousel-dots label[for="slide-2"],
 #slide-3:checked ~ .carousel-dots label[for="slide-3"] {
-    background-color: #5d4037; /* Marrón oscuro para el activo */
+    background-color: #5d4037; 
     transform: scale(1.2);
 }
 

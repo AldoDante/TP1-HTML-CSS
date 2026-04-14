@@ -1,7 +1,7 @@
 :root {
-    --primary-brown: #5d4037; /* Marrón oscuro */
-    --accent-ochre: #bcaaa4;  /* Tono arena/ocre */
-    --bg-light: #efebe9;      /* Fondo tierra muy claro */
+    --primary-brown: #5d4037; 
+    --accent-ochre: #bcaaa4;  
+    --bg-light: #efebe9;      
     --white: #ffffff;
     --transition: all 0.3s ease;
 }
@@ -19,7 +19,7 @@
     text-transform: uppercase;
 }
 
-/* Layout en Grid para las tarjetas (Requisito de diseño responsivo) */
+/* Layout en Grid para las tarjetas  */
 .destinos-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -28,17 +28,16 @@
     margin: 0 auto;
 }
 
-/* Estilo de las Tarjetas (Cards) */
 .card {
     background: var(--white);
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    transition: var(--transition); /* Requisito: transiciones CSS */
+    transition: var(--transition); 
 }
 
 .card:hover {
-    transform: translateY(-10px); /* Efecto hover pedido */
+    transform: translateY(-10px); /* Efecto hover */
     box-shadow: 0 8px 25px rgba(93, 64, 55, 0.3);
 }
 
@@ -53,7 +52,6 @@
     object-fit: cover;
 }
 
-/* Etiqueta de categoría */
 .category {
     position: absolute;
     top: 15px;
@@ -85,7 +83,7 @@
     background-color: #3e2723;
 }
 
-/* --- Contador Animado con Keyframes (Punto 1.24 y 1.62) --- */
+/* --- Contador Animado con Keyframes --- */
 .stats-container {
     margin-top: 50px;
 }
@@ -95,7 +93,7 @@
     font-weight: bold;
     color: var(--primary-brown);
     display: block;
-    animation: pulseCounter 2s infinite; /* Keyframes aplicados */
+    animation: pulseCounter 2s infinite; 
 }
 
 @keyframes pulseCounter {

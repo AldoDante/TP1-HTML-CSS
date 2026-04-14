@@ -43,7 +43,6 @@ body {
     object-fit: cover; /* Asegura que el video cubra el área */
 }
 
-/* Capa oscura para que el texto sea legible */
 .hero-overlay {
     position: absolute;
     top: 0;
@@ -58,7 +57,7 @@ body {
     align-items: center;
 }
 
-/* Animaciones de Texto (Requisito de Texto Animado) */
+/* Animaciones de Texto */
 .animate-text {
     font-size: 3.5rem;
     margin-bottom: 1rem;
@@ -73,7 +72,7 @@ body {
     animation: fadeInUp var(--transition-speed) 0.5s forwards;
 }
 
-/* Botón con micro-interacción (Requisito de Micro-interacciones) */
+/* Botón con micro-interacción */
 .hero-overlay a {
     padding: 12px 30px;
     background-color: var(--accent-color);

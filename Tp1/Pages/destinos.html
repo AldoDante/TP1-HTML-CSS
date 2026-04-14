@@ -4,14 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href=../Styles/destinospage.css>
+    <link rel="stylesheet" href="../Styles/destinospage.css">
+    <link rel="stylesheet" href="../Styles/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../Styles/footer.css">
 </head>
 <body>
     
-    <header class="header-destinos">
-        <h1>MIRA NUESTOS MARAVILLOROS DESTINOS EN JUJUY</h1>
+    <header class="header">
+        <div class="header-container">
+
+            <!-- LOGO -->
+            <h1 class="logo">
+            <span class="logo-magical">Magical</span>
+            <span class="logo-tours">Tours</span>
+            </h1>
+
+            <!-- MENÚ -->
+            <nav class="nav">
+            <ul class="menu">
+
+                <li><a href="../index.html">Inicio</a></li>
+
+                <!-- DESTINOS -->
+                <li class="dropdown">
+                <a href="./Pages/destinos.html">Destinos</a>
+
+                <ul class="submenu">
+                    <li><a href="#">Quebrada de Humahuaca</a></li>
+                    <li><a href="#">Salinas Grandes</a></li>
+                    <li><a href="#">Yungas</a></li>
+                </ul>
+                </li>
+
+                <!-- AGENCIAS -->
+                <li class="dropdown">
+                <a href="#">Agencias</a>
+
+                <ul class="submenu">
+                    <li><a href="#">Agencias Locales</a></li>
+                    <li><a href="#">Tours Privado</a></li>
+                    <li><a href="#">Gias Certificados</a></li>
+                </ul>
+                </li>
+                
+                <!-- PRECIOS -->
+                <li class="dropdown">
+                <a href="#">Precio</a>
+
+                <ul class="submenu">
+                    <li><a href="#">Paquete Economico</a></li>
+                    <li><a href="#">Promociones 2 x 1</a></li>
+                    <li><a href="#">Tarifas Grupales</a></li>
+                </ul>
+                </li>
+
+                <li><a href="./Pages/contacto.html">Contacto</a></li>
+                <li class="dropdown">
+                <a href="./Pages/blog.html">Blog</a>
+                </li>
+     		    
+                </ul>
+
+            </nav>
+        </div>
+
     </header>
-    
+
     <section class="contenedor-destinos">
         <input type="radio" name="filtro" id="todos" checked>
         <input type="radio" name="filtro" id="regiones">
@@ -85,4 +144,44 @@
     </section>
     
 </body>
+
+<footer class="footer">
+    <div class="footer-contenido">
+
+        <!-- IZQUIERDA -->
+        <div class="footer-izq">
+            <a href="https://www.facebook.com" target="_blank">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.tiktok.com" target="_blank">
+                <i class="fab fa-tiktok"></i>
+            </a>
+        </div>
+
+        <!-- CENTRO -->
+        <div class="footer-centro">
+            <form>
+                <input type="text" placeholder="Tu nombre">
+                <input type="email" placeholder="Tu email">
+                <textarea placeholder="Tu mensaje"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+
+        <!-- DERECHA -->
+        <div class="footer-der">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18..."
+                width="300" 
+                height="200" 
+                style="border:0;"
+                loading="lazy">
+            </iframe>
+        </div>
+
+    </div>
+</footer>
 </html>
