@@ -3,59 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/footer.css">
     <title>Turismo</title>
 </head>
 
 <body>
-   <header>
-        <div class="logo">
-            <a href="index.html" aria-label="Volver a la página de inicio">
-                <img src="-------" alt="Logo de Turismo Jujuy">
-            </a>
-        </div> 
+    <header class="header">
+        <div class="header-container">
 
-        <nav aria-label="Navegación principal">
-            <ul class="nav-links">
-                <li><a href="index.html">Inicio</a></li>
-                
-                <li class="li-mega-menu">
-                    <a href="#" class="menu-item" aria-haspopup="true" aria-expanded="false">Explorar</a>
-                    <div class="mega-menu" role="menu" aria-label="Submenú de exploración">
-                        <div class="mega-menu-content">
-                            <div class="mega-column">
-                                <h3>Destinos</h3>
-                                <ul role="none">  <!-- role="none" quita significado semantico y pasa a leer los items-->>
-                                    <li><a href="-" role="menuitem">Quebrada de Humahuaca</a></li>
-                                    <li><a href="--" role="menuitem">Salinas Grandes</a></li>
-                                    <li><a href="--" role="menuitem">Yungas</a></li>
-                                </ul>
-                            </div>
-                            
-                            <div class="mega-column">
-                                <h3>Agencias</h3>
-                                <ul role="none">  
-                                    <li><a href="---" role="menuitem">Agencias Locales</a></li>
-                                    <li><a href="--" role="menuitem">Tours Privados</a></li>
-                                    <li><a href="--" role="menuitem">Guías Certificados</a></li>
-                                </ul>
-                            </div>
-                            
-                            <div class="mega-column">
-                                <h3>Precios</h3>
-                                <ul role="none">
-                                    <li><a href="---" role="menuitem">Paquetes Económicos</a></li>
-                                    <li><a href="---" role="menuitem">Promociones 2x1</a></li>
-                                    <li><a href="---" role="menuitem">Tarifas Grupales</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+            <!-- LOGO -->
+            <h1 class="logo">
+            <span class="logo-magical">Magical</span>
+            <span class="logo-tours">Tours</span>
+            </h1>
+
+            <!-- MENÚ -->
+            <nav class="nav">
+            <ul class="menu">
+
+                <li><a href="#">Inicio</a></li>
+
+                <!-- DESTINOS -->
+                <li class="dropdown">
+                <a href="#">Destinos</a>
+
+                <ul class="submenu">
+                    <li><a href="#">Quebrada de Humahuaca</a></li>
+                    <li><a href="#">Salinas Grandes</a></li>
+                    <li><a href="#">Yungas</a></li>
+                </ul>
                 </li>
 
-                <li><a href="--">Blog</a></li>
-                <li><a href="---">Contacto</a></li>
-            </ul>
-        </nav>
+                <!-- AGENCIAS -->
+                <li class="dropdown">
+                <a href="#">Agencias</a>
+
+                <ul class="submenu">
+                    <li><a href="#">Agencias Locales</a></li>
+                    <li><a href="#">Tours Privado</a></li>
+                    <li><a href="#">Gias Certificados</a></li>
+                </ul>
+                </li>
+                
+                <!-- PRECIOS -->
+                <li class="dropdown">
+                <a href="#">Precio</a>
+
+                <ul class="submenu">
+                    <li><a href="#">Paquete Economico</a></li>
+                    <li><a href="#">Promociones 2 x 1</a></li>
+                    <li><a href="#">Tarifas Grupales</a></li>
+                </ul>
+                </li>
+
+                <li><a href="#">Contacto</a></li>
+     		    <li><a href="#">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+
     </header>
 
     <main>
@@ -164,37 +172,42 @@
 </body>
 
 <footer class="footer">
-    <div class="newsletter">
-        <h3>Suscríbete a nuestro Newsletter</h3>
-        <p>Recibe las mejores ofertas de viaje en tu email.</p>
-        <form class="newsletter_form" aria-label="Suscripción al boletín de noticias">
-            <input type="email" placeholder="Tu correo electrónico" required aria-label="Ingresa tu correo electrónico">
-            <button type="submit" class="btn">Suscribirse</button>
-        </form>
-    </div>
+    <div class="footer-contenido">
 
-    <div class="social">
-        <h3>Síguenos</h3>
-        <div class="social-icons">
-            <a href="#" aria-label="Ir a nuestro Facebook"><i></i></a>
-            <a href="#" aria-label="Ir a nuestro Instagram"><i></i></a>
-            <a href="#" aria-label="Ir a nuestro Twitter"><i></i></a>
+        <!-- IZQUIERDA -->
+        <div class="footer-izq">
+            <a href="https://www.facebook.com" target="_blank">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.tiktok.com" target="_blank">
+                <i class="fab fa-tiktok"></i>
+            </a>
         </div>
-    </div>
 
-    <div class="map">
-        <h3>Ubicación</h3>
-        <div class="map-container">
+        <!-- CENTRO -->
+        <div class="footer-centro">
+            <form>
+                <input type="text" placeholder="Tu nombre">
+                <input type="email" placeholder="Tu email">
+                <textarea placeholder="Tu mensaje"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+
+        <!-- DERECHA -->
+        <div class="footer-der">
             <iframe 
-                title="Mapa interactivo con la ubicación de nuestras oficinas"
-                src="https://www.google.com/maps/embed?pb=..." 
-                width="100%" 
-                height="150" 
-                style="border:0;" 
-                allowfullscreen="" 
+                src="https://www.google.com/maps/embed?pb=!1m18..."
+                width="300" 
+                height="200" 
+                style="border:0;"
                 loading="lazy">
             </iframe>
         </div>
+
     </div>
 </footer>
 

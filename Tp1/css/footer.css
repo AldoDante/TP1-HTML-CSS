@@ -1,0 +1,75 @@
+.footer {
+    background-color: #5a3e2b;
+    color: white;
+    padding: 20px;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.footer-contenido {
+    display: flex;
+}
+
+/* 👉 CAJAS (IZQ - CENTRO - DER) */
+.footer-izq,
+.footer-centro,
+.footer-der {
+    flex: 1; /* cada caja ocupa el mismo espacio */
+    
+    display: flex;
+    justify-content: center; /* centra horizontal */
+    align-items: center;     /* centra vertical */
+}
+
+/* ------------------- */
+/* IZQUIERDA (ICONOS)  */
+/* ------------------- */
+.footer-izq {
+    gap: 20px; /* separación entre iconos */
+}
+
+.footer-izq a {
+    color: gray;
+    font-size: 40px;
+    transition: 0.3s;
+}
+
+.footer-izq a:hover {
+    color: white;
+}
+
+/* ------------------- */
+/* CENTRO (FORMULARIO) */
+/* ------------------- */
+.footer-centro form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 80%;
+}
+
+.footer-centro input,
+.footer-centro textarea {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+}
+
+.footer-centro button {
+    background-color: #8b5e3c;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.footer-centro button:hover {
+    background-color: #a06b45;
+}
+
+/* ------------------- */
+/* DERECHA (MAPA) */
+/* ------------------- */
+.footer-der iframe {
+    border-radius: 10px;
+}
