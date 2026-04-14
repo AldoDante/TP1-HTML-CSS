@@ -78,8 +78,6 @@ input[name="testimonial-slide"] {
     transform: scale(1.2);
 }
 
-/* --- SOLUCIÓN PARA EL FORMULARIO (Evita el choque con la zona café) --- */
-/* Si tu formulario o la sección siguiente tiene clase 'footer' o 'contacto' */
 .formulario-contacto, footer {
     margin-top: 60px; /* Esto crea el espacio en blanco que falta en tu captura */
     padding: 60px 0;
