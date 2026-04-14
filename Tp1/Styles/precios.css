@@ -1,0 +1,144 @@
+.section-title {
+    text-align: center; 
+    color: var(--primary-brown);
+    font-size: 3rem; 
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 1px;
+}
+
+
+.subtitle {
+    text-align: center;
+    margin-bottom: 50px;
+    font-style: italic;
+}
+
+.contenedor-precios {
+    padding: 60px 20px;
+    background-color: var(--bg-light);
+    min-height: 80vh;
+}
+
+.table-responsive {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: var(--white);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+/*  Encabezados y Celdas */
+th {
+    background-color: var(--primary-brown);
+    color: var(--white);
+    padding: 20px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+td {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    color: #555;
+    transition: var(--transition);
+}
+
+.servicio {
+    text-align: left;
+    font-weight: bold;
+    color: var(--primary-brown);
+}
+
+
+tbody tr:hover {
+    background-color: rgba(188, 170, 164, 0.2);
+    transform: scale(1.01);
+}
+
+
+.tooltip-icon {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: var(--accent-ochre);
+    color: var(--white);
+    border-radius: 50%;
+    text-align: center;
+    font-size: 0.7rem;
+    cursor: help;
+    margin-left: 8px;
+    position: relative;
+}
+
+.tooltip-icon::after {
+    content: attr(data-tooltip); 
+    position: absolute;
+    bottom: 150%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #333;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s;
+    z-index: 10;
+}
+
+.tooltip-icon:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+/*Iconos y Precios */
+.check { color: #27ae60; font-size: 1.2rem; }
+.cross { color: #e74c3c; font-size: 1.2rem; }
+
+.price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-brown);
+}
+
+.row-prices {
+    background-color: #f9f9f9;
+}
+
+/*Botones de la tabla */
+.btn-table {
+    display: inline-block;
+    padding: 8px 20px;
+    background: var(--primary-brown);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+
+.best-seller {
+    background: #e67e22;
+    transform: scale(1.1);
+}
+
+.btn-table:hover {
+    filter: brightness(1.2);
+}
+
+/* Adaptación Móvil */
+@media (max-width: 768px) {
+    .price { font-size: 1.1rem; }
+    th, td { padding: 10px 5px; font-size: 0.85rem; }
+}
